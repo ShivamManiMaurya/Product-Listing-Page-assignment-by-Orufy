@@ -1,0 +1,103 @@
+[
+    {
+        "id": "1",
+        "image": "../images/cameraProd.jpg",
+        "name": "Camera digital camera by sony",
+        "category": "Camera",
+        "brand": "Sony",
+        "price": 250.5,
+        "prePrice": 350.5,
+        "reviewCount": "420"
+    },
+    {
+        "id": "2",
+        "image": "../images/cameraProd.jpg",
+        "name": "Watch analog watch by xyz",
+        "category": "Watch",
+        "brand": "xyz",
+        "price": 19.5,
+        "prePrice": 19.5,
+        "reviewCount": "44"
+    },
+    {
+        "id": "3",
+        "image": "../images/cameraProd.jpg",
+        "name": "Bag leather bag by abc",
+        "category": "Bag",
+        "brand": "Abc",
+        "price": 50.5,
+        "prePrice": 45.5,
+        "reviewCount": "48"
+    },
+    {
+        "id": "4",
+        "image": "../images/cameraProd.jpg",
+        "name":"Elegant designed fiber plant pot by pqr",
+        "category": "Pot",
+        "brand": "pqr",
+        "price": 13.5,
+        "prePrice": 19.5,
+        "reviewCount": "75"
+    },
+    {
+        "id": "5",
+        "image": "../images/cameraProd.jpg",
+        "name": "GameBoy Advanced color by nintendo",
+        "category": "Games",
+        "brand": "Nintendo",
+        "price": 43.5,
+        "prePrice": 50.5,
+        "reviewCount": "123"
+    },
+    {
+        "id": "6",
+        "image": "../images/cameraProd.jpg",
+        "name": "T-shirt - for summers by fabric",
+        "category": "Tshirt",
+        "brand": "Fabric",
+        "price": 13.5,
+        "prePrice": 19.5,
+        "reviewCount": "123"
+    },
+    {
+        "id": "7",
+        "image": "../images/cameraProd.jpg",
+        "name": "cap - for summers by fabric",
+        "category": "Cap",
+        "brand": "Fabric",
+        "price": 13.5,
+        "prePrice": 19.5,
+        "reviewCount": "123"
+    },
+    {
+        "id": "8",
+        "image": "../images/cameraProd.jpg",
+        "name": "Phone - Smart phone by nothing phone",
+        "category": "Phone",
+        "brand": "Nothing",
+        "price": 180.3,
+        "prePrice": 170.5,
+        "reviewCount": "123"
+    },
+    {
+        "id": "9",
+        "image": "../images/cameraProd.jpg",
+        "name": "HandBag leather handbag by abc",
+        "category": "Bag",
+        "brand": "Abc",
+        "price": 70.5,
+        "prePrice": 55.5,
+        "reviewCount": "94"
+    },
+    {
+        "id": "10",
+        "image": "../images/cameraProd.jpg",
+        "name": "Shoes colorful shoes by nike",
+        "category": "Shoes",
+        "brand": "Nike",
+        "price": 45.5,
+        "prePrice": 65.5,
+        "reviewCount": "94"
+    }
+]
+
