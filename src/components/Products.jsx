@@ -1,17 +1,19 @@
 import React from "react";
-import Filter from "./Filter";
-import cameraProd from "../images/cameraProd.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalf } from "@fortawesome/free-solid-svg-icons";
 
-function Products({ name, price, prePrice, reviewCount, category }) {
+function Products({ image, name, price, prePrice, reviewCount, category }) {
     return (
-        <div className="flex gap-6 mt-10 justify-center">
-            <Filter />
-            <div className="bg-white w-60 rounded-md overflow-hidden">
+        <div className="flex justify-center gap-6 mt-10 shadow-lg h-full">
+            <div className="bg-white w-[220px] rounded-md overflow-hidden">
                 <div>
-                    <img className="" src={cameraProd} alt="" />
+                    <img
+                        className=""
+                        src={process.env.PUBLIC_URL + image}
+                        alt=""
+                    />
                 </div>
                 <div className="p-4">
                     <h4 className="font-bold">{name.slice(0, 20) + "..."}</h4>
