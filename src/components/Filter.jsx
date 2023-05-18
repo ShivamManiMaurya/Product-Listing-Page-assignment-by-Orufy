@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import FilterPoints from "./FilterPoints";
 
-function Filter() {
+function Filter({ onButtonClick, onChecked }) {
     return (
         <div className="bg-white w-[500px] h-fit p-4 mt-8 shadow-lg rounded-lg">
             <div className="flex justify-between">
@@ -17,6 +17,7 @@ function Filter() {
                 three="abc"
                 four="pqr"
                 five="fabric"
+                onChecked={onChecked}
             />
             <FilterPoints
                 heading="Category"
@@ -25,6 +26,7 @@ function Filter() {
                 three="bags"
                 four="decoratives"
                 five="fabrics"
+                onChecked={onChecked}
             />
             <FilterPoints
                 heading="Price"
@@ -33,6 +35,7 @@ function Filter() {
                 three="$200-$599"
                 four="$600-$999"
                 five=">$1000"
+                onChecked={onChecked}
             />
         </div>
     );

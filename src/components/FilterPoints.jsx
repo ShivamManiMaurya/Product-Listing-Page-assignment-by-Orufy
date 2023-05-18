@@ -1,6 +1,14 @@
 import React from "react";
 
-function FilterPoints({ heading, one, two, three, four, five }) {
+function FilterPoints({ heading, one, two, three, four, five, onChecked }) {
+    const handleCheckBox = (e) => {
+        if (e.target.checked) {
+            return onChecked(e.target.value);
+        } else {
+            return onChecked("");
+        }
+    };
+
     return (
         <div>
             <div className="border-b border-gray-500 m-4"></div>
@@ -11,8 +19,13 @@ function FilterPoints({ heading, one, two, three, four, five }) {
                         id="checkbox1"
                         type="checkbox"
                         className="form-checkbox h-5 w-5 text-blue-600"
+                        onChange={handleCheckBox}
+                        value={one}
                     />
-                    <label for="checkbox1" className="ml-2 block text-gray-900">
+                    <label
+                        htmlFor="checkbox1"
+                        className="ml-2 block text-gray-900"
+                    >
                         {one}
                     </label>
                 </div>
@@ -21,8 +34,12 @@ function FilterPoints({ heading, one, two, three, four, five }) {
                         id="checkbox2"
                         type="checkbox"
                         className="form-checkbox h-5 w-5 text-blue-600"
+                        value={two}
                     />
-                    <label for="checkbox2" className="ml-2 block text-gray-900">
+                    <label
+                        htmlFor="checkbox2"
+                        className="ml-2 block text-gray-900"
+                    >
                         {two}
                     </label>
                 </div>
@@ -31,8 +48,12 @@ function FilterPoints({ heading, one, two, three, four, five }) {
                         id="checkbox3"
                         type="checkbox"
                         className="form-checkbox h-5 w-5 text-blue-600"
+                        value={three}
                     />
-                    <label for="checkbox3" className="ml-2 block text-gray-900">
+                    <label
+                        htmlFor="checkbox3"
+                        className="ml-2 block text-gray-900"
+                    >
                         {three}
                     </label>
                 </div>
@@ -41,8 +62,12 @@ function FilterPoints({ heading, one, two, three, four, five }) {
                         id="checkbox3"
                         type="checkbox"
                         className="form-checkbox h-5 w-5 text-blue-600"
+                        value={four}
                     />
-                    <label for="checkbox3" className="ml-2 block text-gray-900">
+                    <label
+                        htmlFor="checkbox3"
+                        className="ml-2 block text-gray-900"
+                    >
                         {four}
                     </label>
                 </div>
@@ -51,8 +76,12 @@ function FilterPoints({ heading, one, two, three, four, five }) {
                         id="checkbox3"
                         type="checkbox"
                         className="form-checkbox h-5 w-5 text-blue-600"
+                        value={five}
                     />
-                    <label for="checkbox3" className="ml-2 block text-gray-900">
+                    <label
+                        htmlFor="checkbox3"
+                        className="ml-2 block text-gray-900"
+                    >
                         {five}
                     </label>
                 </div>

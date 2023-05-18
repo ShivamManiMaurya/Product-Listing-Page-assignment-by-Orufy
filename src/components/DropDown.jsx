@@ -17,8 +17,8 @@ function DropDown() {
                 </a>
             </div>
             <div>
-                <select name="Sort by" id="">
-                    <option value="" disabled selected className="hidden">
+                <select defaultValue="sortBy" name="Sort by" id="">
+                    <option value="sortBy" disabled className="hidden">
                         Sort By
                     </option>
                     <option value="priceHightoLow">Price high to low</option>{" "}
