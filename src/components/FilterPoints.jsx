@@ -1,10 +1,21 @@
 import React from "react";
 
 function FilterPoints({ heading, one, two, three, four, five, onChecked }) {
+    // let count = 0;
+
+    // const filterData = {
+    //     filterType: "",
+    //     filterCount: count,
+    // };
+
     const handleCheckBox = (e) => {
         if (e.target.checked) {
+            // count++;
+            // console.log(filterData);
             return onChecked(e.target.value);
         } else {
+            // count--;
+            // console.log("else = ", filterData);
             return onChecked("");
         }
     };
@@ -35,6 +46,7 @@ function FilterPoints({ heading, one, two, three, four, five, onChecked }) {
                         type="checkbox"
                         className="form-checkbox h-5 w-5 text-blue-600"
                         value={two}
+                        onChange={handleCheckBox}
                     />
                     <label
                         htmlFor="checkbox2"
@@ -49,6 +61,7 @@ function FilterPoints({ heading, one, two, three, four, five, onChecked }) {
                         type="checkbox"
                         className="form-checkbox h-5 w-5 text-blue-600"
                         value={three}
+                        onChange={handleCheckBox}
                     />
                     <label
                         htmlFor="checkbox3"

@@ -4,7 +4,7 @@
         "image": "/images/cameraProd.jpg",
         "name": "Camera digital camera by sony",
         "category": "electronics",
-        "brand": "electric",
+        "brand": "xyz",
         "price": 250.5,
         "prePrice": 350.5,
         "reviewCount": "420"
@@ -93,7 +93,7 @@
         "id": "10",
         "image": "/images/shoesProd.jpg",
         "name": "Shoes colorful shoes by nike",
-        "category": "fabrics",
+        "category": "pqr",
         "brand": "pqr",
         "price": 45.5,
         "prePrice": 65.5,

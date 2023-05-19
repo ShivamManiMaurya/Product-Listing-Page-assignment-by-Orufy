@@ -4,6 +4,15 @@ import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import FilterPoints from "./FilterPoints";
 
 function Filter({ onButtonClick, onChecked }) {
+    const handleData = (data) => {
+        console.log(
+            // eslint-disable-next-line no-useless-concat
+            JSON.stringify(data) + " " + "filterType ",
+            data.filterType + "|| filterCount = " + data.count
+        );
+        onChecked(data);
+    };
+
     return (
         <div className="bg-white w-[500px] h-fit p-4 mt-8 shadow-lg rounded-lg">
             <div className="flex justify-between">
@@ -17,7 +26,7 @@ function Filter({ onButtonClick, onChecked }) {
                 three="abc"
                 four="pqr"
                 five="fabric"
-                onChecked={onChecked}
+                onChecked={handleData}
             />
             <FilterPoints
                 heading="Category"
@@ -26,7 +35,7 @@ function Filter({ onButtonClick, onChecked }) {
                 three="bags"
                 four="decoratives"
                 five="fabrics"
-                onChecked={onChecked}
+                onChecked={handleData}
             />
             <FilterPoints
                 heading="Price"
