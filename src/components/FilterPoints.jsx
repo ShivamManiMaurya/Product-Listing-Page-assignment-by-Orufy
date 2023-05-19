@@ -1,4 +1,5 @@
 import React from "react";
+import prodData from "./productData.json";
 
 function FilterPoints({ heading, one, two, three, four, five, onChecked }) {
     // let count = 0;
@@ -12,11 +13,14 @@ function FilterPoints({ heading, one, two, three, four, five, onChecked }) {
         if (e.target.checked) {
             // count++;
             // console.log(filterData);
-            return onChecked(e.target.value);
+
+            prodData.filter((prod) => prod.category === e.target.value);
+
+            return onChecked([true, e.target.value]);
         } else {
             // count--;
-            // console.log("else = ", filterData);
-            return onChecked("");
+            // console.log(`None ${e.target.value}`);
+            return onChecked([false, e.target.value]);
         }
     };
 
